@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <title>Gcheck</title>
 </head>
-<body id="login">
+<body id="create-account">
 <section class="gc-section">
     <div class="gc-container-img">
       <div class="gc-container-style">
@@ -22,9 +22,12 @@
     </div>
     <div class="gc-container-login">
       <div class="gc-container">
-        <h2>Login:</h2>
+        <h2>Create your account:</h2>
         <form id="form" class="form">
-          
+          <div class="gc-form-content">
+            <label for="Name">Name</label>
+            <input type="Name" placeholder="" id="Name" required />
+          </div>
             <div class="gc-form-content">
               <label for="email">Email:</label>
               <input type="email" placeholder="" id="email" required />
@@ -34,20 +37,22 @@
               <input type="password" placeholder="" id="password"  required />
             </div>
             <div class="gc-form-content">
-              <button type="submit">Access!</button>
+              <label for="senha">Confirm the Password:</label>
+              <input type="password" placeholder="" id="password"  required />
             </div>
             <div class="gc-form-content">
-              <p>I don't have an account? <br><a href="/create-account.html">Click here!</a>.</p>
+              <button type="submit">Create an account!</button>
+            </div>
+            <div class="gc-form-content">
+              <p>I have an account! <br><a href="/login.html">Create here!</a>.</p>
             </div>
           </form>
           <div class="gc-form-content footer">
             <p>Gcheck 2023 - Todos os <br> direitos reservados!</p>
           </div>
-        
         </div>
     </div>
 </section>
-
 <script src="/js/script.js">
 
 </script>

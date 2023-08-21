@@ -157,16 +157,20 @@ line-height: normal;
 }
 
 @media only screen and (max-width: 780px) {
+    
+    .gc-section {
+        width: 500px;
+    }
     .gc-container-img {
-        height: 120vh;
+        height: 100vh;
         width: 100%;
     
     }
 
 
     .gc-container-login{
-        margin:18px 77px 0 71px;
-       
+        margin:18px 77px 0 10px;
+
     }
 
   

@@ -25,35 +25,39 @@
         <h2>Create your account:</h2>
         <form id="form" class="form">
           <div class="gc-form-content">
-            <label for="Name">Name</label>
-            <input type="Name" placeholder="" id="Name" required />
+            <label for="username">Name</label>
+            <input type="text" placeholder="" id="username">
+            <a>Required name!</a>
           </div>
             <div class="gc-form-content">
               <label for="email">Email:</label>
-              <input type="email" placeholder="" id="email" required />
+              <input type="text" placeholder="" id="email" autocomplete="email">
+              <a>Required email!</a>
             </div>
             <div class="gc-form-content">
-              <label for="senha">Password:</label>
-              <input type="password" placeholder="" id="password"  required />
+              <label for="password">Password:</label>
+              <input type="password" placeholder="" id="password" autocomplete="password">
+              <a>Required password!</a>
             </div>
             <div class="gc-form-content">
-              <label for="senha">Confirm the Password:</label>
-              <input type="password" placeholder="" id="password"  required />
+              <label for="password-confirmation">Confirm the Password:</label>
+              <input type="password-confirmation" placeholder="" id="password-confirmation" autocomplete="confirm-password">
+              <a>Confirm your password!</a>
             </div>
             <div class="gc-form-content">
-              <button type="submit">Create an account!</button>
+              <button type="submit" id="submit">Create an account!</button>
             </div>
             <div class="gc-form-content">
-              <p>I have an account! <br><a href="/login.html">Create here!</a>.</p>
-            </div>
-          </form>
+              <p >I have an account! <br><a id="bg-a" href="/login.html">Create here!</a>.</p>
+            </div> 
+          </form>        
           <div class="gc-form-content footer">
-            <p>Gcheck 2023 - Todos os <br> direitos reservados!</p>
+            <p>Gcheck 2023 - All <br> rights reserved.</p> 
           </div>
         </div>
     </div>
 </section>
-<script src="/js/script.js">
+<script src="./js/script.js">
 
 </script>
 </body>

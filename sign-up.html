@@ -16,7 +16,7 @@
     />
     <title>Gcheck</title>
   </head>
-  <body id="login">
+  <body id="sign-up">
     <section class="gc-section">
       <div class="gc-container-img">
         <div class="gc-container-style">
@@ -28,37 +28,62 @@
       </div>
       <div class="gc-container-login">
         <div class="gc-container">
-          <h2>Login:</h2>
+          <h2>Create your account:</h2>
           <form id="form" class="form">
             <div class="gc-form-content">
+              <label for="username">Name</label>
+              <input type="text" placeholder="" id="username" required />
+              <a>Required name!</a>
+            </div>
+            <div class="gc-form-content">
               <label for="email">Email:</label>
-              <input type="email" placeholder="" id="email" name="email" />
+              <input
+                type="text"
+                placeholder=""
+                id="email"
+                autocomplete="email"
+                required
+              />
               <a>Required email!</a>
             </div>
             <div class="gc-form-content">
-              <label for="senha">Password:</label>
+              <label for="password">Password:</label>
               <input
                 type="password"
                 placeholder=""
+                class="verSenha"
                 id="password"
-                name="password"
+                autocomplete="password"
+                required
+              />
+              <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+              <a>Required password!</a>
+            </div>
+            <div class="gc-form-content">
+              <label for="password-confirmation">Confirm the Password:</label>
+              <input
+                type="password"
+                placeholder=""
+                id="password-confirmation"
+                autocomplete="confirm-password"
+                required
               />
               <i
                 id="password-confirmation"
                 class="fa fa-eye"
                 aria-hidden="true"
               ></i>
-              <a>Required password!</a>
+              <a>Confirm your password!</a>
             </div>
             <div class="gc-form-content">
-              <button onclick="Cadastrar()" type="submit" id="submit">
-                Access!
+              <button onclick="Login()" type="submit" id="submit" id="signUp">
+                Create an account!
               </button>
             </div>
             <div class="gc-form-content">
               <p>
-                I don't have an account? <br /><a id="bg-a" href="/sign-up.html"
-                  >Click here!</a
+                I have an account! <br /><a id="bg-a" href="/login.html"
+                  >Create here!</a
                 >.
               </p>
             </div>
@@ -72,11 +97,6 @@
         </div>
       </div>
     </section>
-
-    <script src="/js/script.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-database.js"></script>
-
-    <script></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

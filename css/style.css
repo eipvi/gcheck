@@ -1,201 +1,186 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
-p{
-    font-family: 'Poppins', sans-serif;
-}
-
-img{
-    display: block;
+img {
+  display: block;
 }
 
 body {
-    background-color: #fafafafa;
-    width: 100%;
-    min-height: 100vh;
-
+  background-color: #fafafafa;
+  width: 100%;
+  height: 440px;
 }
 
-.gc-section{
-display: flex;
-flex-wrap: wrap;
-align-items: center;
-
-
+.gc-section {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .gc-container-img {
-    height: 120vh;
-    width: 50%;
-    background-image: url("/images/gc-img-container.png");
-    background-color: #ffffff;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+  height: 100vh;
+  width: 50%;
+  display: block;
+  background-image: url("/images/gc-img-container.png");
+  background-color: #ffffff;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.gc-container-introducao{
-    padding: 220px 37px 0 0;
-    position: relative;
-    margin: 10px 0 0 58px;
-    z-index: 1;
+.gc-container-introducao {
+  padding: 210px 37px 0 0;
+  position: relative;
+  margin: 0 0 0 58px;
+  z-index: 1;
 }
 
 .gc-container-introducao h1 {
-    color: #424242;
-    font-family: 'Covered By Your Grace', cursive;
-    font-size: 6em;
-    font-style: normal;
-    font-weight: 400;
-    
+  color: #424242;
+  font-family: "Covered By Your Grace", cursive;
+  font-size: 6em;
+  font-style: normal;
+  font-weight: 400;
 }
 
-.gc-container-introducao h2{
-    font-size: 1.40em;
-    font-weight: 300;
-    font-family: 'Poppins', sans-serif;
-    margin: -15px 0;
+.gc-container-introducao h2 {
+  font-size: 1.4em;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  margin: -15px 0;
 }
 
-.gc-container-login{
-    z-index: 2;
-    display: block;
-    width: 350px;
-    margin: 50px 50px 0 150px;
-    flex-shrink: 0;
+.gc-container-login {
+  z-index: 2;
+  display: block;
+  width: 350px;
+  margin: 10px 50px 0 150px;
+  flex-shrink: 0;
 }
 
-
-.gc-container-login h2{
-    padding: 18px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
+.gc-container-login h2 {
+  padding: 10px 0 10px 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
 }
 
-
-.form{
-    padding: 15px;
-    margin: auto;
+.form {
+  padding: 10px 15px;
+  margin: auto;
 }
 
-
-
-.gc-form-content{
-    margin: 10px 0 -15px 0;
-    position: relative;
-    
+.gc-form-content {
+  margin: 10px 0 -15px 0;
+  position: relative;
 }
-
 
 .footer {
-margin: 10px;
-
+  margin: 10px;
 }
 
-#bg-a{
-   visibility: visible;
+#bg-a {
+  visibility: visible;
 }
 
 .gc-form-content a {
-    font-size: 0.7em;
-    font-weight: 400;
-    bottom: -3px;
-    left: 0;
-    visibility: hidden;
+  font-size: 0.7em;
+  font-weight: 400;
+  bottom: -3px;
+  left: 0;
+  visibility: hidden;
 }
 
-
-.gc-form-content label{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    display: inline-block;
-    margin-bottom: 4px;
-    font-size: 0.8em;
+.gc-form-content label {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  display: inline-block;
+  margin-bottom: 4px;
+  font-size: 0.8em;
 }
 
-.gc-form-content input{
-    display: block;
-    width: 100%;
-    height: 20px;
-    padding: 8px 0 8px 2px;
-    border-radius: 4.015px;
-    border: 0.803px solid rgba(0, 0, 0, 0.16);
-    background: rgba(217, 217, 217, 0.36);
+.gc-form-content input {
+  display: block;
+  width: 100%;
+  height: 20px;
+  padding: 10px 0 8px 2px;
+  border-radius: 4.015px;
+  border: 0.803px solid rgba(0, 0, 0, 0.16);
+  background: rgba(217, 217, 217, 0.36);
 }
 
-.form button{
-    background-color: #53647D;
-    box-shadow: 0px 3.2125277519226074px 3.2125277519226074px 0px rgba(0, 0, 0, 0.25);
-    color: #ffffff;
-    width: 100%;
-    border-radius: 5px;
-    padding: 15px;
-    border: 0;
-    cursor: pointer;
-    font-size: 12px;
-    margin-top: 14px;
+.form button {
+  background-color: #53647d;
+  box-shadow: 0px 3.2125277519226074px 3.2125277519226074px 0px
+    rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  width: 100%;
+  border-radius: 5px;
+  padding: 15px;
+  border: 0;
+  cursor: pointer;
+  font-size: 12px;
+  margin-top: 14px;
 }
 
-.gc-form-content p{
-    display: block;
-    color: #000;
-    font-family: 'Poppins', sans-serif;
-text-align: center;
-font-size: 12.122px;
-font-style: normal;
-font-weight: 300;
-line-height: normal;
-margin-top: 25px;
+.gc-form-content p {
+  display: block;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 12.122px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 25px;
 }
 
-.gc-form-content.error input{
-    border-color: #FB0D05;
+.gc-form-content.error input {
+  border-color: #fb0d05;
 }
 
 .gc-form-content.error a {
-    color: #FB0D05;
-    visibility: visible;
+  color: #fb0d05;
+  visibility: visible;
 }
 
-@media only screen and (max-width: 320px){
-    .gc-container-img {
-        height: 100vh;
-        width: 200px;
-    
-    }
+.fa-eye {
+  position: absolute;
+  top: 35px;
+  right: 10px;
+  color: #000000;
+  cursor: pointer;
+}
 
+@media only screen and (max-width: 320px) {
+  .gc-container-img {
+    height: 100vh;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
-
-    .gc-container-img {
-        height: 100vh;
-        width: 100%;
-    
-    }
+  .gc-container-img {
+    height: 100vh;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 780px) {
-    
-    .gc-section {
-        width: 500px;
-    }
-    .gc-container-img {
-        height: 100vh;
-        width: 100%;
-    
-    }
+  .gc-section {
+    width: 500px;
+  }
+  .gc-container-img {
+    height: 100vh;
+    width: 100%;
+  }
 
 
-    .gc-container-login{
-        margin:18px 77px 0 10px;
-
-    }
-
-  
+  .gc-container-login {
+    width: 350px;
+    margin: 0 auto;
+  }
 }
-

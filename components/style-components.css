@@ -1,49 +1,110 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background: #ffffff;
-    font-family: "Poppins", sans-serif;
-  }
-  
-  li {
-    list-style: none;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  img {
-    display: block;
-    max-width: 100%;
-  }
+  background: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
 
 header {
-    width: 100%;
-    padding: 20px;
-    background: rgb(83,100,125);
-    color: #ffffff;
-    position: fixed;
-    z-index: 999 !important;
-  }
-  
-  .gc-nav ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+  width: 100%;
+  padding: 20px;
+  background: rgba(83, 100, 125, 0.424);
+  color: #424242;
+  position: fixed;
+  z-index: 999 !important;
+}
 
-  .gc-nav ul li {
-    padding: 15px;
-    font-size: 0.8em;
-    font-weight: 400;
-  }
+.gc-nav {
+  padding: 0 35px 0 15px;
+}
 
-  .gc-section {
-    padding: 100px 25px;
-    
-  }
+.gc-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gc-nav ul li {
+  padding: 10px 7px;
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+.gc-nav img {
+  width: 20px;
+  height: 20px;
+}
+
+.gc-nav .profile span {
+  display: none;
+}
+
+.gc-container {
+  padding: 130px 25px 30px 50px;
+}
+
+.gc-container span {
+  font-weight: 300;
+}
+
+.gc-container-input {
+  padding: 0 25px 30px 25px;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* border: 1px solid #53647d67; */
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.card div {
+  padding: 0 10px;
+}
+
+.gc-container-input button {
+  padding: 15px 10px;
+  margin: 0 20px 0 10px;
+}
+
+.lineInput {
+  display: grid;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #53647d67;
+  background-color: none;
+  border-radius: 5px;
+  outline: 0;
+}
+
+button {
+  border: 0;
+  padding: 10px 15px;
+  outline: 0;
+  background-color: rgb(83, 100, 125);
+  color: #ffffff;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}

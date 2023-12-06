@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/components/style-components.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/components/style-components.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,23 +11,54 @@
       rel="stylesheet"
     />
     <title>Task list</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="gc-nav">
-            <ul>
-                <li>Profile</li>
-                <li>Task list</li>
-                <li>Disconnect</li>
-            </ul>
-        </nav>
+      <nav class="gc-nav">
+        <ul>
+          <li class="profile">
+            <img src="/images/profile.svg" alt="Profile Icon" />
+            <span>Profile</span>
+          </li>
+          <li class="profile">
+            <img src="/images/list.svg" alt="Profile Icon" />
+            <span>Task list</span>
+          </li>
+          <li class="profile">
+            <img src="/images/calendar.svg" alt="Profile Icon" />
+            <span>Calendar</span>
+          </li>
+          <li class="profile">
+            <img src="/images/sent.svg" alt="Profile Icon" />
+            <span>Sent</span>
+          </li>
+          <li class="profile">
+            <img src="/images/def.svg" alt="Profile Icon" />
+            <span>Configuration</span>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <section class="gc-section">
-        <h1>Task List</h1>
-        <p>Crie u</p>
+    <section class="gc-container">
+      <h1>Task List</h1>
+      <span>Organize your tasks in one place with our Task List tool.</span>
     </section>
-    <main>
+    <main class="gc-container-input">
+      <div class="card">
+        <div class="lineInput">
+          <label>Task</label>
+          <input type="text" id="task" placeholder="task name " />
+        </div>
+        <div class="lineInput">
+          <label>Note</label>
+          <input type="note" id="note" placeholder="note" />
+        </div>
 
+        <button onclick="list.save()">To save</button>
+        <button onclick="list.cancel()">Cancel</button>
+      </div>
     </main>
-</body>
+    <main></main>
+    <script src="/components/script-list.js"></script>
+  </body>
 </html>
